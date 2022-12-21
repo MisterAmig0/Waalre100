@@ -1,0 +1,38 @@
+@media (min-width: 600px) {
+    .grid-g {
+      display: grid;
+      height: 100vh;
+      padding-top: 100px;
+
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-g {
+      display: grid;
+      padding-top: 100px;
+      grid-template-columns: 1fr;
+    }
+
+  }
+  
+  .item-g {
+    line-height: 1.5;
+    top: 100vh;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 16px;
+  }
+  
+
+  .image-g {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .title-g {
+    text-align: center;
+  }

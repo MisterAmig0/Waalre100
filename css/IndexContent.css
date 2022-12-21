@@ -1,8 +1,4 @@
-.content-container{
-    
-    grid-area: main;
-    padding-top: 140px;
-}
+
 
 #page {
     height: 100vh;
@@ -37,6 +33,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    #page {
+        grid-template-columns: 20px 1fr 20px;
+    } 
     #content {
         display: grid;
         grid-template-columns: 1fr;
@@ -44,10 +43,9 @@
             "a"
             "b" 
             "c" 
-            "d"; 
+            "d";
     }
 }
-
 
 .information {
     line-height: 2;
@@ -64,11 +62,15 @@ h1, p, .text-below {
 .image-button {
     display: flex;
     place-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .button-nextpage{
-    margin: 50px;
+    margin: auto;
     padding: 10px 50px;
+    display:border-box;
     background-color: green;   
     color: white;
     font-size: 16px;
@@ -79,5 +81,3 @@ h1, p, .text-below {
 .image-content {
     width: 150px;
 }
-
-
