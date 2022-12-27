@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/63dd24c8b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/gallerij.css">
-    <title>Waalre100 - Gallerij</title>
+    <link rel="stylesheet" href="css/kalender.css">
+    <script defer src="js/main.js"></script>
+    <title>Waalre100 - Kalender</title>
 </head>
 <body>
 
 
- <section id="page">   
+<section id="page">   
 <!-- Nav Bar -->
 <header>
 <div class="nav-container">
     <div class="logo"><img src="images/Logo.png" alt="" class="logo-image"></div>
-
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <!-- <li><a href="stichting.html">Stichting</a></li> -->
-                    <li><a href="">Gallerij</a></li>
+                    <li><a href="galerij.html">Gallerij</a></li>
                     <li><a href="nieuws.html">Nieuws</a></li>
                     <li><a href="geschiedenis.html">Geschiedenis Waalre</a></li>
                     <li><a href="kalender.html">Kalender</a></li>
@@ -37,24 +37,52 @@
 <!-- Nav Bar -->
 
 <!-- Main -->
-<main class="content-container">
-        <h1 class="title-a">Gallerij</h1>
-        <div class="title">
-            <h1>Gemeente Waalre</h1>
-            <p>De officiele foto's van gemeente Waalre</p>
-        </div>
-        
-        <div class="container">
-            <img src="images/Logo.png" alt="Photo 1" class="Photo">
-            <img src="images/Logo.png" alt="Photo 2" class="Photo">
-            <img src="images/Logo.png" alt="Photo 3" class="Photo">
-            <div class="button">
-                <button>Bekijk meer foto's</button>
-            </div>
-        </div>
 
-        
+<main class="content-container">
+  <div class="month">
+    <button class="button open-january open-btn" ><h2>Januari 2023</h2></button>
+</div>
+  <dialog class="modal" id="modal-january">
+    <div class="modal-header">
+      <div class="title">Januari 2023</div>
+      <button class="button close-january">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="content-modal"><h4>Woensdag 5 Januari 19:00 - 21:00:  </h4> <p>Nieuwjaarsreceptie</p></div>
+    </div>
+  </dialog>
+
+  <div class="month">
+    <button class="button open-march open-btn"><h2>March 2023</h2></button>
+  </div iv>
+  <dialog class="modal" id="modal-march">
+      <div class="modal-header">
+       <div class="title">Maart 2023</div>
+        <button class="button close-march">&times;</button>
+     </div>
+    <div class="modal-body">
+            <div class="content-modal"><h4>Woensdag 15 Maart</h4></div> <p>Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
+    </div>
+  </dialog>
+
+  <div class="month">
+    <button class="button open-september open-btn"><h2>September 2023</h2></button>
+  </div iv>
+  <dialog class="modal" id="modal-september">
+      <div class="modal-header">
+       <div class="title">September 2023</div>
+        <button class="button close-september">&times;</button>
+     </div>
+    <div class="modal-body">
+      <div class="content-modal"><h4>Dinsdag 5 September t/m Zondag 10 September</h4> </div><p>Openluchtbioscoop Het Wolders Ven</p>
+      <div class="content-modal"><h4>Zaterdag 17 September</h4> </div><p>Historisch 112-event</p>
+      <div class="content-modal"><h4>Donderdag 21 September t/m Zondag 10 September</h4> </div>Inspiratie Kennis Congres voor ondernemend
+</div>
+  </dialog>
+
+
 </main>
+
 <!-- Main -->
 
 <!-- Footer -->
