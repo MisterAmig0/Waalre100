@@ -1,7 +1,6 @@
 
-
 #page {
-    height: 100vh;
+    height: 70vh;
     place-items: center;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -10,6 +9,7 @@
         ". main ." 
         "footer footer footer";
 }
+
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +19,9 @@
     grid-gap: 20px;
 }
 
+.alinea {
+    text-align: center;
+}
 #page #content-a {
     grid-area: a
 }
@@ -26,25 +29,18 @@
     grid-area: b
 }
 #page #content-c {
-    grid-area: c
+    grid-area: c    
 }
 #page #content-d {
     grid-area: d
 }
 
-@media screen and (max-width: 800px) {
-    #page {
-        grid-template-columns: 20px 1fr 20px;
-    } 
-    #content {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "a"
-            "b" 
-            "c" 
-            "d";
-    }
+.content-title {
+    font-size: 36px;
+}
+
+.news-container, .gallery-container { 
+    margin-top: 25px;
 }
 
 .information {
@@ -59,13 +55,16 @@ h1, p, .text-below {
     flex-direction: column;
 }
 
-.image-button {
+.image-text {
     display: flex;
     place-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
 }
+
 
 .button-nextpage{
     margin: auto;
@@ -80,4 +79,20 @@ h1, p, .text-below {
 
 .image-content {
     width: 150px;
+}
+
+
+@media screen and (max-width: 800px) {
+    #page {
+        grid-template-columns: 20px 1fr 20px;
+    } 
+    #content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "a"
+            "b" 
+            "c" 
+            "d";
+    }
 }

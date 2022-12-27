@@ -3,9 +3,7 @@
       display: grid;
       height: 100vh;
       padding-top: 100px;
-
       grid-template-columns: repeat(2, 1fr);
-      
     }
   }
   
@@ -21,8 +19,6 @@
   .item-g {
     line-height: 1.5;
     top: 100vh;
-    background-color: lightblue;
-    border: 1px solid black;
     padding: 16px;
   }
   
