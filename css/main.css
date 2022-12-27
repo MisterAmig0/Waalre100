@@ -117,21 +117,20 @@ nav a {
 
 /* Navigaton bar  */
 .content-container{
-    
   grid-area: main;
   padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 
 /* Footer */
 footer {
+    grid-area: footer;
+    width: 100%;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column; 
-    position: fixed;    
-    bottom: 0;
-    width: 100%;
 }
 footer ul li {
     list-style: none;
