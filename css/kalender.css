@@ -2,23 +2,33 @@
   background: rgb(0 0 0 / 0.4);
 }
 
+.header-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
 .month {
   width: 40%;
   height: 100px;
   border: 1px solid black;
   text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;   
+  display: flex;
+  
 }
 
 .open-btn {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #3498DB;
   cursor: pointer;
   border: none;
   line-height: 100px;
   display: flex;
-  font-size: 10px;
-  justify-content: left;
+  justify-content: center;
   font-size: 20px;
 }
 
@@ -68,6 +78,23 @@
   font-size: 20px;
   display: flex;
 }
+
+.button-container {
+  margin-top: 50px;
+} 
+
+
+.apply-button {
+  display: grid;
+  margin: auto;
+  padding: 10px 50px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: linear-gradient(120deg, RGB(227,28,121), rgb(0, 208, 255));
+}
+
+
 
 @media (max-width: 768px) { 
   .month {

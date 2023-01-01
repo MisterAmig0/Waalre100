@@ -21,7 +21,6 @@ title > h1, p {
   }
 
   button {
-    position: fixed;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -46,5 +45,8 @@ title > h1, p {
       width: 50%; 
     }
 
+    .button {
+      text-align: center;
+    }
 
   }

@@ -1,0 +1,25 @@
+.page-header {
+  text-align: center;
+  font-size: 50px
+}
+
+.gallery {
+  text-align: center;
+  margin-top: 57px;
+}
+
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(2);
+}
+
+
+

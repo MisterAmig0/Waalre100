@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/63dd24c8b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/IndexContent.css">
+    <link rel="stylesheet" href="css/kalender.css">
+    <script defer src = "js/main.js"></script>
     <title>Waalre100 - Home</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
 <!-- Nav Bar -->
 <header>
 <div class="nav-container">
-    <div class="logo"><img src="images/Logo.png" alt="" class="logo-image"></div>
+    <div class="logo"><a href="index.html"><img src="images/Logo.png" alt="logo" class="logo-image"></a></div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
@@ -46,15 +48,15 @@
                 Op 1 januari 2023 bestaat de gemeente Waalre precies 100 jaar. 
                 Dat moet natuurlijk gevierd worden! Samen met jullie - de inwoners en betrokkenen van Waalre - maken wij - Stichting
                 Waalre100 - er een onvergetelijk jaar van. 
-                Een feestelijk jaar voor de inwoners van Waalreen georganiseerd door de inwoners van Waalre. 
+                Een feestelijk jaar voor de inwoners van Waalre en georganiseerd door de inwoners van Waalre. 
                 Want ‘Waalre100 vieren we samen’. 
-                Wezetten onze gemeente lokaal en regionaal positief op de kaart met unieke activiteiten,
+                We zetten onze gemeente lokaal en regionaal positief op de kaart met unieke activiteiten,
                 opvallende uitingen en duurzame projecten in de breedste zin van het woord. Doe je mee?! <br>
 
                 <h3 class="alinea">Wat kun je verwachten?</h3>
 
                 Er komen steeds meer concrete en geweldige initiatieven bij ons binnenstromen. Waalre100
-                is 1 jaar lang feest met diverse hoogtepunten. Vanuit onze stichting organiseren en
+                is een jaar lang feest met diverse hoogtepunten. Vanuit onze stichting organiseren en
                 stimuleren we de organisatie van een jubileumweek(end) tussen 3 en 9 juli 2023 en 22 en 24
                 september 2023. Ook is er een intensieve samenwerking met de gemeente Waalre om
                 gemeentelijke activiteiten een extra feestelijk cachet te geven. <a href="kalender.html">Via onze
@@ -71,7 +73,7 @@
                 aan.
 
                 <h3 class="alinea">Persoonlijk contact?</h3>
-                Wil je graag meer informatie of om een andere reden contact met ons? Je bereikt onze
+                Wil je graag meer informatie of om een andere reden contact met ons? neem dan contact met ons op Je bereikt onze
                 stichting via<a href="mailto: info@waalre100.com"> info.waalre100.com</a>. Daarnaast heeft de gemeente Waalre projectleider Nikki Barten
                 aangesteld. Zij is voor alle vragen over Waalre100 bereikbaar via 06-23902734 (of via
                 <a href="mailto: nbarten@waalre.nl"> nbarten@waalre.nl).</a>
@@ -82,6 +84,47 @@
 
         <div class="events" id="content-b">
             <h1 class="content-title">Aankomende Evenementen</h1>
+            <div class="month">
+                <button class="button open-january open-btn" ><h2>Januari 2023</h2></button>
+            </div>
+              <dialog class="modal" id="modal-january">
+                <div class="modal-header">
+                  <div class="title">Januari 2023</div>
+                  <button class="button close-january">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="content-modal"><h4>Woensdag 5 Januari 19:00 - 21:00:  </h4> <p>Nieuwjaarsreceptie</p></div>
+                </div>
+              </dialog>
+              <div class="month">
+                <button class="button open-march open-btn"><h2>Maart 2023</h2></button>
+              </div iv>
+              <dialog class="modal" id="modal-march">
+                  <div class="modal-header">
+                   <div class="title">Maart 2023</div>
+                    <button class="button close-march">&times;</button>
+                 </div>
+                <div class="modal-body">
+                        <div class="content-modal"><h4>Woensdag 15 Maart</h4></div> <p>Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
+                </div>
+              </dialog>
+            
+              <div class="month">
+                <button class="button open-september open-btn"><h2>September 2023</h2></button>
+              </div iv>
+              <dialog class="modal" id="modal-september">
+                  <div class="modal-header">
+                   <div class="title">September 2023</div>
+                    <button class="button close-september">&times;</button>
+                 </div>
+                <div class="modal-body">
+                  <div class="content-modal"><h4>Dinsdag 5 September t/m Zondag 10 September</h4> </div><p>Openluchtbioscoop Het Wolders Ven</p>
+                  <div class="content-modal"><h4>Zaterdag 17 September</h4> </div><p>Historisch 112-event</p>
+                  <div class="content-modal"><h4>Donderdag 21 September t/m Zondag 10 September</h4> </div>Inspiratie Kennis Congres voor ondernemend
+            </div>
+              </dialog>
+
+              
         </div>
 
         <div class="news-container" id="content-c">
@@ -108,15 +151,15 @@
 
 
         <div class="gallery-container" id="content-d">   
-            <h1 class="content-title">Laatste nieuwsberichten</h1>
+            <h1 class="content-title">Laatste foto-album</h1>
             <div class="gallery">
                 <div class="image-text">
                   <div>
                     <img src="images/Logo.png" alt="Image" class="image-content">
                   </div>
                     <div class="text">
-                        <h2>Nieuwjaar Receptie</h2>
-                        <p>Op 5 januari word het nieuwe logo, plannen en alles van <br>Waalre100 bekend gemaakt.<br> 
+                        <h2>Gemeente Waalre</h2>
+                        <p>De offciele foto's van gemeente waalre<br> 
 
                         </p>
                     </div>
@@ -136,26 +179,26 @@
 <footer>
     <section class="footer-container">
         <div class="item">
-            <h3>Over ons</h3>
+            <h3>Bezoek Adres</h3>
         <ul>
-            <li><a href="" class="">Titel 1</a></li>
-            <li><a href="" class="">Titel 2</a></li>
+            <li><a href="">Koningin Julianalaan 19</a></li>
+            <li><a href="">5582 JV Waalre</a></li>
         </ul>
         </div> 
         <div class="item">
-            <h3>Extra</h3>
+            <h3>Meer informatie</h3>
             <ul>
-                <li><a href="" class="">Titel 1</a></li>
-                <li><a href="" class="">Titel 2</a></li>
+                <li><a href="https://www.waalre.nl/">Gemeente Waalre</a></li>
+                <li><a href="">FAQ</a></li>
             </ul>
         </div> 
         
         <div class="item">
             <h3>Contact</h3>
             <ul>
-                <a href="" class="icons"><i class="fa-brands fa-facebook"></i></a>
-                <a href="" class="icons"><i class="fa-brands fa-linkedin"></i></i></a>
-                <a href="" class="icons"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.facebook.com/GemeenteWaalre" class="icons" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/mwlite/company/gemeente-waalre" class="icons" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://instagram.com/gemeentewaalre?igshid=YmMyMTA2M2Y=" class="icons" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
             </ul>
         </div> 
     </section>

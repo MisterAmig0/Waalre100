@@ -1,3 +1,4 @@
+  
 const modalJanuary = document.querySelector("#modal-january");
 const openJanuary = document.querySelector(".open-january");
 const closeJanuary = document.querySelector(".close-january");
@@ -33,5 +34,6 @@ openSeptember.addEventListener("click", () => {
 closeSeptember.addEventListener("click", () => {
   modalSeptember.close();
 });
+
 
 

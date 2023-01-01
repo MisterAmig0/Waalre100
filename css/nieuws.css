@@ -1,3 +1,8 @@
+.page-header {
+  text-align: center;
+  margin-bottom: 50px
+}
+
 .container {
     display: flex;
     gap: 20px;
@@ -22,6 +27,22 @@
   
   p {
     margin: 20px 0;
+  }
+
+
+  .next-page {
+    text-align: center;
+    margin-top:20px;
+    font-size: 40px;
+  }
+
+  .next-page a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .number {
+    display: inline-block;
   }
 
   @media (max-width: 768px) {
