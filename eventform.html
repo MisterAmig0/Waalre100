@@ -42,10 +42,11 @@
         <main class="content-container">
             <div class="container">
                 <h1 class="title">Neemt contact met ons op</h1>
-                <form class="contact-form" action="contactform.php" method="post">
+                <form action="https://formsubmit.co/info@waalre100.com" method="POST">
 
                     <input name="name" type="text" class="feedback-input" placeholder="Volledige naam" />
-                    <input name="mail" type="email" class="feedback-input" placeholder="Uw naam" />
+                    <input type="email" name="email"  class="feedback-input" placeholder="Uw email-adres">
+                    <input type="hidden" name="_next" value="https://waalre100.com/eventform.html">
                     <input name="subject" type="text" class="feedback-input" placeholder="Het onderwerp" />
                     <textarea name="message" class="feedback-input" placeholder="Uw bericht."></textarea>
                     <input type="submit" value="Verstuur"/>

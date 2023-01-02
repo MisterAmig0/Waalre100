@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-h3 {
+.title-month {
   font-size: 30px;
 }
 
@@ -38,7 +38,6 @@ h3 {
 }
 
 .faq-plus{
-  float: right;
   font-size: 1.4em;
   line-height: 1em;
   cursor: pointer;
@@ -57,7 +56,7 @@ h3 {
   color: white;
   font-size: 16px;
   cursor: pointer;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
 
 }
 
