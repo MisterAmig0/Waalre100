@@ -2,8 +2,8 @@
 
 if (isset($_POST['.submit'])) {
     $name = $_POST['name'];
-    $mailFrom = $_POST['mail'];
     $subject = $_POST['subject'];
+    $mailFrom = $_POST['mail'];
     $message = $_POST['message'];
 
 
@@ -12,5 +12,5 @@ if (isset($_POST['.submit'])) {
     $txt = "Je hebt een mail van: " . $name . ".\n\n" . $message;
 
 
-    mail($mailTo, $subject, $text, $headers);
+    mail($mailTo, $subject, $txt, $headers);
 }
