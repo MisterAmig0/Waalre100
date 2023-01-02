@@ -76,7 +76,7 @@ h1, p, .text-below {
     color: white;
     font-size: 16px;
     cursor: pointer;
-	background-image: linear-gradient(120deg, RGB(227,28,121), rgb(0, 208, 255));
+	background-image: linear-gradient(120deg, rgb(240,230,140), rgb(0,139,139));
 }
 
 .text-below {
@@ -85,6 +85,7 @@ h1, p, .text-below {
 
 .image-content {
     width: 150px;
+    height: 150px;
 }
 
 
