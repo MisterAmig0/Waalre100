@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/63dd24c8b5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/kalender.css">
     <script defer src="js/main.js"></script>
@@ -23,7 +24,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <!-- <li><a href="stichting.html">Stichting</a></li> -->
-                    <li><a href="galerij.html">Gallerij</a></li>
+                    <li><a href="gallerij.html">Gallerij</a></li>
                     <li><a href="nieuws.html">Nieuws</a></li>
                     <li><a href="geschiedenis.html">Geschiedenis Waalre</a></li>
                     <li><a href="kalender.html">Kalender</a></li>
@@ -38,86 +39,89 @@
 
 <!-- Main -->
 
-<main class="content-container">
+<main class="content-container">   
+<div class="container">
+  <div class="row">
+    <div class="faq-wrapper">   
+      <div class="faq-inner">
+        <h1 class="title">Evenementen kalender</h1>
+        <div class="faq-item">
+          <h3 class="title1">
+            Januari 2023
+          </h3>
+          <div class="body body1">
+            <div class="inside">
+              <h4>Woensdag 5 Januari 19:00 - 21:00</h4><p class="text">Nieuwjaarsreceptie</p>
+            </div>
+          </div>
+        </div>    
+        
+        <div class="faq-item">
+          <h3 class="title2">
+            Maart 2023
+          </h3>
+          <div class="body body2">
+            <div class="inside">
+              <h4>Woensdag 15 Maart</h4><p class="text">Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3 class="title3">
+            September 2023
+          </h3>
+          <div class="body body3">
+            <div class="inside">
+              <h4>Dinsdag 5 September t/m Zondag 10 September</h4><p class="text">Openluchtbioscoop Het Wolders Ven</p>
+              <h4>Zaterdag 17 September</h4> <p class="text">Historisch 112-event</p>
+              <h4>Donderdag 21 September t/m Zondag 10 September</h4><p class="text">Inspiratie Kennis Congres voor ondernemens</p>
 
-  <h1 class="header-title">Aankomende evenementen</h1>
-  <div class="month">
-    <button class="button open-january open-btn" ><h2>Januari 2023</h2></button>
-</div>
-  <dialog class="modal" id="modal-january">
-    <div class="modal-header">
-      <div class="title">Januari 2023</div>
-      <button class="button close-january">&times;</button>
+            </div>
+          </div>
+        </div> 
+          <div class="button-container">
+    <a href="mailto:infowaalre100.com"><button class="apply-button">Evenement aanvragen?</button></a>
+  </div> 
+      </div>
     </div>
-    <div class="modal-body">
-      <div class="content-modal"><h4>Woensdag 5 Januari 19:00 - 21:00:  </h4> <p>Nieuwjaarsreceptie</p></div>
-    </div>
-  </dialog>
-
-  <div class="month">
-    <button class="button open-march open-btn"><h2>March 2023</h2></button>
-  </div iv>
-  <dialog class="modal" id="modal-march">
-      <div class="modal-header">
-       <div class="title">Maart 2023</div>
-        <button class="button close-march">&times;</button>
-     </div>
-    <div class="modal-body">
-            <div class="content-modal"><h4>Woensdag 15 Maart</h4></div> <p>Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
-    </div>
-  </dialog>
-
-  <div class="month">
-    <button class="button open-september open-btn"><h2>September 2023</h2></button>
-  </div iv>
-  <dialog class="modal" id="modal-september">
-      <div class="modal-header">
-       <div class="title">September 2023</div>
-        <button class="button close-september">&times;</button>
-     </div>
-    <div class="modal-body">
-      <div class="content-modal"><h4>Dinsdag 5 September t/m Zondag 10 September</h4> </div><p>Openluchtbioscoop Het Wolders Ven</p>
-      <div class="content-modal"><h4>Zaterdag 17 September</h4> </div><p>Historisch 112-event</p>
-      <div class="content-modal"><h4>Donderdag 21 September t/m Zondag 10 September</h4> </div>Inspiratie Kennis Congres voor ondernemens
-</div>
-  </dialog>
-
-  <div class="button-container">
-    <a href="eventform.html"><button class="apply-button">Evenement aanvragen?</button></a>
   </div>
+</div>
+
+
 </main>
 
 <!-- Main -->
 
 <!-- Footer -->
 <footer>
-  <section class="footer-container">
-      <div class="item">
-          <h3>Bezoek Adres</h3>
-      <ul>
-          <li><a href="">Koningin Julianalaan 19</a></li>
-          <li><a href="">5582 JV Waalre</a></li>
-      </ul>
-      </div> 
-      <div class="item">
-          <h3>Meer informatie</h3>
-          <ul>
-              <li><a href="https://www.waalre.nl/">Gemeente Waalre</a></li>
-              <li><a href="">FAQ</a></li>
-          </ul>
-      </div> 
-      
-      <div class="item">
-          <h3>Contact</h3>
-          <ul>
-              <a href="https://www.facebook.com/GemeenteWaalre" class="icons" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://www.linkedin.com/mwlite/company/gemeente-waalre" class="icons" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-              <a href="https://instagram.com/gemeentewaalre?igshid=YmMyMTA2M2Y=" class="icons" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-          </ul>
-      </div> 
-  </section>
+    <section class="footer-container">
+        <div class="item">
+            <h3>Bezoek Adres</h3>
+        <ul>
+            <li><a href="">Koningin Julianalaan 19</a></li>
+            <li><a href="">5582 JV Waalre</a></li>
+        </ul>
+        </div> 
+        <div class="item">
+            <h3>Meer informatie</h3>
+            <ul>
+                <li><a href="https://www.waalre.nl/">Gemeente Waalre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div> 
+        
+        <div class="item">
+            <h3>Contact</h3>
+            <ul>
+                <a href="https://www.facebook.com/GemeenteWaalre" class="icons" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/mwlite/company/gemeente-waalre" class="icons" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://instagram.com/gemeentewaalre?igshid=YmMyMTA2M2Y=" class="icons" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+            </ul>
+        </div> 
+    </section>
 </footer>
 <!-- Footer -->
 </section>
+
 </body>
 </html>

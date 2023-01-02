@@ -10,7 +10,7 @@ form { max-width:420px; margin:50px auto; }
   font-size: 18px;
   border-radius: 5px;
 
-  border:2px solid #CC6666;
+  border:2px solid black;
   padding: 13px;
   margin-bottom: 15px;
   width:100%;
@@ -25,7 +25,7 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background:#CC6666;
+  background:black;
   border-radius:5px;
   border:0;
   cursor:pointer;

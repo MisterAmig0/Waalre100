@@ -1,0 +1,35 @@
+.content-container {
+  height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  .faq-item{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .body{
+    display: none;
+    margin-top: 30px;
+  }
+
+  .faq-wrapper{
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .faq-inner{
+    padding: 30px;
+  }
+
+  .faq-plus{
+    float: right;
+    font-size: 1.4em;
+    line-height: 1em;
+    cursor: pointer;
+  }
+

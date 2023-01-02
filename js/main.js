@@ -1,39 +1,12 @@
-  
-const modalJanuary = document.querySelector("#modal-january");
-const openJanuary = document.querySelector(".open-january");
-const closeJanuary = document.querySelector(".close-january");
-
-const modalMarch = document.querySelector("#modal-march");
-const openMarch = document.querySelector(".open-march");
-const closeMarch = document.querySelector(".close-march");
-
-const modalSeptember = document.querySelector("#modal-september");
-const openSeptember = document.querySelector(".open-september");
-const closeSeptember = document.querySelector(".close-september");
-
-openJanuary.addEventListener("click", () => {
-  modalJanuary.showModal();
+$(".title1").on('click',function(){
+  $(this).parent().parent().find('.body1').slideToggle();
 });
-
-closeJanuary.addEventListener("click", () => {
-  modalJanuary.close();
+$(".title2").on('click',function(){
+  $(this).parent().parent().find('.body2').slideToggle();
 });
-
-openMarch.addEventListener("click", () => {
-  modalMarch.showModal();
+$(".title3").on('click',function(){
+  $(this).parent().parent().find('.body3').slideToggle();
 });
-
-closeMarch.addEventListener("click", () => {
-  modalMarch.close();
+$(".title4").on('click',function(){
+  $(this).parent().parent().find('.body4').slideToggle();
 });
-
-openSeptember.addEventListener("click", () => {
-  modalSeptember.showModal();
-});
-
-closeSeptember.addEventListener("click", () => {
-  modalSeptember.close();
-});
-
-
-

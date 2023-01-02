@@ -84,9 +84,12 @@ h1, p, .text-below {
 }
 
 .image-content {
+    margin-top: 20px;
     width: 150px;
     height: 150px;
 }
+
+
 
 
 @media screen and (max-width: 800px) {
