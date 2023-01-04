@@ -60,3 +60,12 @@
 
 }
 
+@media (min-height: 1038px)
+{
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+

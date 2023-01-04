@@ -37,3 +37,11 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+@media (min-height: 1038px)
+{
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

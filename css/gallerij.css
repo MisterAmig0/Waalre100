@@ -35,6 +35,13 @@ title > h1, p {
     height: 150px;
   }
 
+  @media (min-width: 768px) {
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  
   @media (max-width: 768px) { 
     .container {
       flex-direction: column;      
@@ -48,5 +55,4 @@ title > h1, p {
     .button {
       text-align: center;
     }
-
   }
