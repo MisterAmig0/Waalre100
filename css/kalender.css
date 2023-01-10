@@ -12,6 +12,7 @@
 
 .faq-item{
   margin-bottom: 40px;
+  cursor: pointer;
   margin-top: 60px;
   border-bottom: 1px solid black;
 }
@@ -37,10 +38,9 @@
   padding: 30px;
 }
 
-.faq-plus{
-  font-size: 1.4em;
-  line-height: 1em;
-  cursor: pointer;
+span {
+  font-size: 20px;
+  float: right;
 }
 
 .button-container {

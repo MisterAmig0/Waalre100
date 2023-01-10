@@ -5,7 +5,7 @@
 
 .gallery {
   text-align: center;
-  margin-top: 57px;
+  margin-top: 20px;
 }
 
 
@@ -16,9 +16,14 @@
   height: 200px;
 }
 
-.gallery img:hover {
-  filter: grayscale(100%);
-  transform: scale(1.5);
+img {
+  transition:transform 0.25s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  -webkit-transform:scale(1.5); /* or some other value */
+  transform:scale(1.5);
 }
 
 

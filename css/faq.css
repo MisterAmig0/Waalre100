@@ -8,6 +8,7 @@
   .faq-item{
     margin-bottom: 40px;
     margin-top: 40px;
+    cursor: pointer;
   }
   
   .body{
@@ -24,10 +25,19 @@
     padding: 30px;
   }
 
-  .faq-plus{
+  span {
     float: right;
-    font-size: 1.4em;
-    line-height: 1em;
-    cursor: pointer;
+    font-size: 20px;
   }
 
+  
+
+
+
+@media (min-height: 1038px)
+{
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

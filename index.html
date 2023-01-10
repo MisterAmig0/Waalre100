@@ -17,23 +17,27 @@
 <section id="page">   
 <!-- Nav Bar -->
 <header>
-<div class="nav-container">
-    <div class="logo"><a href="index.html"><img src="images/Logo.png" alt="logo" class="logo-image"></a></div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="stichting.html">Stichting</a></li>
-                    <li><a href="gallerij.html">Gallerij</a></li>
-                    <li><a href="nieuws.html">Nieuws</a></li>
-                    <li><a href="geschiedenis.html">Geschiedenis Waalre</a></li>
-                    <li><a href="kalender.html">Kalender</a></li>
-                </ul>
-            </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-        </label>
-</div>
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+        <a href="index.html"><img src="images/Logo.png" alt="logo" class="Imagelogo"></a>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-items">
+      <a href="index.html" class="active">Home</a>
+      <a href="stichting.html">Over ons</a>
+      <a href="gallerij.html">Foto's</a>
+      <a href="nieuws.html">Nieuws</a>
+      <a href="geschiedenis.html">Geschiedenis Waalre</a>
+      <a href="kalender.html">Evenementen kalender</a>
+    </div>
+  </div>
 </header>
 <!-- Nav Bar -->
 
@@ -43,7 +47,7 @@
     <div id="content">
         <div class="information" id="content-a">
             
-            <h1 class="content-title">Informatie:</h1>
+            <h1 class="content-title">Informatie</h1>
             <p>
                 Op 1 januari 2023 bestaat de gemeente Waalre precies 100 jaar. 
                 Dat moet natuurlijk gevierd worden! Samen met jullie - de inwoners en betrokkenen van Waalre - maken wij - Stichting
@@ -69,7 +73,7 @@
                 voor de promotie van je evenement, denk hierbij aan uitingen in kranten en op social media,
                 vermelding op de evenementenkalender, maar ook aan Waalre100-promotie op jouw
                 evenement. Deze wordt door ons gratis beschikbaar gesteld. Er zijn ook mogelijkheden voor
-                financiële ondersteuning. Via <a href="eventform.html">dit formulir</a> op de website meld je jouw evenement bij ons
+                financiële ondersteuning. Via <a href="eventform.html">dit formulier</a> op de website meld je jouw evenement bij ons
                 aan.
 
                 <h3 class="alinea">Persoonlijk contact?</h3>
@@ -78,7 +82,8 @@
                 aangesteld. Zij is voor alle vragen over Waalre100 bereikbaar via 06-23902734 (of via
                 <a href="mailto: nbarten@waalre.nl"> nbarten@waalre.nl).</a>
                 Laten we er een onvergetelijk jaar van maken. Want Waalre100 vieren we samen.
-                Het bestuur van de stichting Waalre100  
+                <br>
+                - Het bestuur van de stichting Waalre100  
             </p>
           </div>
 
@@ -86,72 +91,104 @@
         <div class="events" id="content-b">
             <h1 class="content-title">Aankomende Evenementen</h1>
             <div class="container">
-                <div class="row">
-                  <div class="faq-wrapper">   
-                    <div class="faq-inner">
-                      <div class="faq-item">
-                        <h3 class="title-month title1">
-                          Januari 2023
-                        </h3>
-                        <div class="body body1">
-                          <div class="inside">
-                            <h4>Woensdag 5 januari 19:00 - 21:00</h4><p class="text">Nieuwjaarsreceptie</p>
-                            <h4>Zondag 8 januari 13.00 tot 17.00.</h4><p class="text">Paardensport evenement Slipjacht. Locatie: Buitengebied Waalre.</p>
-                            <h4>Zondag 8 januari 13.30</h4><p class="text">Nieuwjaars honden wandeling. Verzamelen station koffiehuis. </p>
-                          </div>
-                        </div>
-                      </div>    
-
-                      <div class="faq-item">
-                        <h3 class="title-month title4">
-                          Februari 2023
-                        </h3>
-                        <div class="body body4">
-                          <div class="inside">
-                            <h4>Zaterdag 25 februari 09:00 - 17.00</h4><p class="text">Paarse Boscross en NSK Cross. Locatie: rond Meeuwven.</p>
-                          </div>
-                        </div>
-                      </div> 
-                      
-                      <div class="faq-item">
-                        <h3 class="title-month title2">
-                          Maart 2023
-                        </h3>
-                        <div class="body body2">
-                          <div class="inside">
-                            <h4>Woensdag 15 maart</h4><p class="text">Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
-                          </div>
+              <div class="row">
+                <div class="faq-wrapper">   
+                  <div class="faq-inner">
+                    <div class="faq-item">
+                      <h3 class="title-month title1">
+                        Januari 2023
+                        <span class="fa-solid fa-plus"></span> 
+                      </h3>
+                      <div class="body body1">
+                        <div class="inside">
+                          <h4>Woensdag 5 januari 19:00 - 21:00</h4><p class="text">Nieuwjaarsreceptie</p>
+            
                         </div>
                       </div>
-
-                      <div class="faq-item">
-                        <h3 class="title-month title5">
-                          Juni 2023
-                        </h3>
-                        <div class="body body5">
-                          <div class="inside">
-                            <h4>Zondag 4 juni 10:00 - 00:00 </h4><p class="text">Zeepsop voetbaltoernooi. Locatie: grasveld naast De Volmolen.</p>
-                          </div>
+                    </div>    
+            
+                    <!-- <div class="faq-item">
+                      <h3 class="title-month title4">
+                        Februari 2023
+                        <span class="fa-solid fa-plus"></span> 
+                      </h3>
+                      <div class="body body4">
+                        <div class="inside">
+                        
                         </div>
                       </div>
-
-                      <div class="faq-item">
-                        <h3 class="title-month title3">
-                          September 2023
-                        </h3>
-                        <div class="body body3">
-                          <div class="inside">
-                            <h4>Dinsdag 5 september t/m Zondag 10 September</h4><p class="text">Openluchtbioscoop Het Wolders Ven</p>
-                            <h4>Zaterdag 17 september</h4> <p class="text">Historisch 112-event</p>
-                            <h4>Donderdag 21 september t/m Zondag 10 September</h4><p class="text">Inspiratie Kennis Congres voor ondernemens</p>
-      
-                          </div>
+                    </div> 
+                     -->
+                    <div class="faq-item">
+                      <h3 class="title-month title2">
+                        Maart 2023
+                        <span class="fa-solid fa-plus"></span> 
+                      </h3>
+                      <div class="body body2">
+                        <div class="inside">
+                          <h4>Woensdag 15 maart</h4><p class="text">Nationale Boomplantdag met onthulling ‘100 jaar boom Gemeente Waalre’.</p>
                         </div>
-                      </div>  
+                      </div>
                     </div>
+            
+                    <div class="faq-item">
+                      <h3 class="title-month title8">
+                        Mei 2023
+                        <span class="fa-solid fa-plus"></span>  
+                      </h3>
+                      <div class="body body8">
+                        <div class="inside">
+                          <h4>Maandag 22 mei t/m Zondag 2 juli</h4><p class="text">Stickerboek Waalres Erfgoed i.c.m. Albert Heijn</p>
+                        </div>
+                      </div>
+                    </div> 
+            
+                    <!-- <div class="faq-item">
+                      <h3 class="title-month title5">
+                        Juni 2023
+                        <span class="fa-solid fa-plus"></span> 
+                      </h3>
+                      <div class="body body5">
+                        <div class="inside">
+                          
+                        </div>
+                      </div>
+                    </div> -->
+            
+                          <div class="faq-item">
+                      <h3 class="title-month title7">
+                        Juli 2023
+                        <span class="fa-solid fa-plus"></span> 
+                      </h3>
+                      <div class="body body7">
+                        <div class="inside">
+                          <h4>Maandag 22 mei t/m Zondag 2 juli</h4><p class="text">Stickerboek Waalres Erfgoed i.c.m. Albert Heijn</p>
+                          <h4>Maandag 3 juli t/m Zondag 9 juli</h4><p class="text">Jubileumweek</p>
+                        </div>
+                      </div>
+                    </div> 
+            
+                    <div class="faq-item">
+                      <h3 class="title-month title3">
+                        September 2023
+                        <span class="fa-solid fa-plus"></span>  
+                      </h3>
+                      <div class="body body3">
+                        <div class="inside">
+                          <h4>Dinsdag 5 september t/m Zondag 10 September</h4><p class="text">Openluchtbioscoop Het Wolders Ven</p>
+                          <h4>Zaterdag 9 september</h4><p class="text">Ronde van Waalre door Loopgroep Waalre</p>
+                          <h4>Zaterdag 17 september</h4> <p class="text">Historisch 112-event</p>
+                          <h4>Donderdag 21 september</h4><p class="text">Inspiratie Kennis Congres voor ondernemens</p>
+                          <h4>Vrijdag 22 september t/m 24 september Zondag</h4><p class="text">Jubileumweekend</p>
+            
+                        </div>
+                      </div>
+                    </div>  
                   </div>
                 </div>
               </div>
+                  </div>
+              
 
               
         </div>

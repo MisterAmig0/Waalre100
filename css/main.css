@@ -1,127 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-* {
-    --background: rgba(0, 0, 0, 0.85);
-    box-sizing: border-box;
-    padding: 0;
-    font-family: sans-serif;
-    margin: 0;
-}
 
 
 
 /* navigation */
 
-header {
-  grid-area: head;
-  position: fixed;
-  top: 0;
-  background: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo-image {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.Imagelogo {
   width: 100px;
-  margin-left: 50px;
   height: 100px;
-}
-
-.logo {
-  margin-right: 100px;
-  width: fit-content;
-  display: flex;
   cursor: pointer;
+  margin-left: 50px;
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-}
-
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background: var(--background);
+.nav {
+  height: 120px;
   width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  margin-left: auto;
+  background-color: #D3D3D3;
+  position: relative;
 }
 
+  .nav > .nav-header {
+    display: inline;
+  }
 
-nav ul {
-  list-style: none;
+.nav > .nav-header{
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
 }
 
-nav a {
-  color: white;
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-items {
+  display: inline;
+
+  font-size: 30px;
+}
+
+.nav > .nav-items > a {
+  display: inline-block;
+  margin-left: 20px;
+  transform: translate(0%, -70%);
+  padding: 10px;
   text-decoration: none;
-  font-size: 26px;
+  color: black;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+.nav > .nav-items > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
 
-.nav-toggle {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-  }
-  
-  .nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 16px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    display: block;
-    background: white;
-    height: 2px;
-    width: 32px;
-    border-radius: 2px;
-    position: relative;
-  }
-  
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    content: '';
-    position: absolute;
-  }
-  
-  .nav-toggle-label span::before {
-    bottom: 7px;
-  }
-  
-  .nav-toggle-label span::after {
-    top: 7px;
-  }
+.nav > #nav-check {
+  display: none;
+}
 
 
 /* Navigaton bar  */
 .content-container{
   grid-area: main;
-  padding-top: 140px;
+  margin-top: 30px;
   padding-bottom: 100px;
 }
 
@@ -158,65 +103,61 @@ footer ul li {
 }
 /* Footer */
 
-@media screen and (min-width: 1217px) {
-    .nav-toggle-label {
-      display: none;
-    }
-
-    nav {
-       all: unset; 
-
-      position: relative;
-      text-align: left;
-      transition: none;
-      transform: scale(1,1);
-      background: none;
-      top: initial;
-      left: initial;
-      
-      grid-column: 3 / 4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    
-    nav ul {
-      display: flex;
-    }
-    
-    nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-    }
-    
-    nav a {
-      opacity: 1;
-      position: relative;
-    }
-    
-    nav a:hover::before {
-      transform: scale(1,1);
-    }
-
-    
+@media (max-width:1330px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    transform: translate(-40%, 50%);
   }
 
-  @media (max-width: 1217px){
-    footer {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .item {
-      width: 100%;
-    }
-
-    .icons {
-      font-size: 30px;
-    }
-
-    .logo {
-      margin-inline: auto;
-    }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
+
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+
+  .nav > .nav-items {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 120px;
+    left: 0px;
+  }
+
+  .nav > .nav-items > a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-items {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-items {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  
+}
+
+
+
+
 
